@@ -1,0 +1,22 @@
+---
+import Layout from "./Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/base.css";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+    <main>
+        <Navigation />
+        <hr class="spacer-nav" />
+
+        <h1 class="grad-aquamarine">{frontmatter.title}</h1>
+        <p><em>{frontmatter.description}</em></p>
+        <p>Written by: {frontmatter.author}</p>
+        <p>Last Updated: {frontmatter.pubDate}</p>
+        <slot />
+
+        <hr class="spacer-footer" />
+        <Navigation />
+    </main>
+</Layout>
