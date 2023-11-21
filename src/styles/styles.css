@@ -1,0 +1,119 @@
+/* ============================================================== */
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 900px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+}
+.text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+}
+.main-paragraph {
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(39, 43, 54, 100%);
+    background: rgba(30, 33, 41, 33%);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.instructions code {
+    font-size: 0.8em;
+    font-family: "WFVisualSans", sans-serif;
+    font-weight: 600;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+}
+.instructions strong {
+    color: rgb(var(--accent-light));
+}
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+/* ============================================================== */
+
+/* navigation */
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: "WFVisualSans", sans-serif;
+    font-weight: 600;
+    transition: 150ms all;
+}
+.logo:hover {
+    color: rgb(var(--aquamarine));
+}
+/* socials */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.link {
+    width: 20px;
+    height: 20px;
+    color: white;
+    transition: all 200ms ease-out;
+}
+.link:hover {
+    color: rgb(var(--aquamarine));
+}
+/* text */
+h1 {
+    font-family: "WFVisualSans", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 1.8rem;
+}
+h2 {
+    font-family: "WFVisualSans", sans-serif;
+    font-weight: 600;
+}
+p {
+    font-size: 1.2rem;
+}
+/* footer */
+
+/* other */
+hr.spacer-nav {
+    margin: 1.3rem 0rem 2rem 0rem;
+    border-color: var(--aquamarine);
+}
+hr.spacer-footer {
+    margin: 2rem 0rem 1.5rem 0rem;
+    border-color: var(--aquamarine);
+}
+
+/* DESIGN SYSTEM */
+.light {
+    background-color: white;
+    color: black;
+}
