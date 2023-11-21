@@ -31,14 +31,6 @@ const posts = await Astro.glob("./posts/*.md");
                     />
                 ))
             }
-
-            <!-- <Card
-                href="https://astro.build/integrations/"
-                title="Integrations"
-                body="Supercharge your project with new frameworks and libraries."
-            />
-            <Card href="https://astro.build/themes/" title="Themes" body="Explore a galaxy of community-built starter themes." />
-            <Card href="https://astro.build/chat/" title="Community" body="Come say hi to our amazing Discord community. ❤️" /> -->
         </ul>
 
         <hr class="spacer-footer" />
@@ -47,15 +39,6 @@ const posts = await Astro.glob("./posts/*.md");
 </Layout>
 
 <style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        width: 900px;
-        max-width: calc(100% - 2rem);
-        color: white;
-        font-size: 20px;
-        line-height: 1.6;
-    }
     .astro-a {
         position: absolute;
         top: -32px;
@@ -71,24 +54,6 @@ const posts = await Astro.glob("./posts/*.md");
         -webkit-text-fill-color: transparent;
         background-size: 400%;
         background-position: 0%;
-    }
-    .main-paragraph {
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(39, 43, 54, 100%);
-        background: rgba(30, 33, 41, 33%);
-        padding: 1.5rem;
-        border-radius: 8px;
-    }
-    .instructions code {
-        font-size: 0.8em;
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-    }
-    .instructions strong {
-        color: rgb(var(--accent-light));
     }
     .link-card-grid {
         display: grid;
