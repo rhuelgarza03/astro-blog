@@ -13,6 +13,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.txt-coral {
+    color: rgb(var(--coral));
+}
+.txt-aqua {
+    color: rgb(var(--aquamarine));
+}
 .astro-a {
     position: absolute;
     top: -32px;
